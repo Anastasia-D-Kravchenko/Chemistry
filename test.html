@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" onmouseover="opor()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="img/pngegg (3).png" rel="shortcut icon" type="image/x-icon">
+    <link href="img/pngegg (3).png" rel="apple-touch-icon">
+    <title>Test</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="./img/icons/Suspension-Bridge-PNG-Picture.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    *{
+        font-size: 50px;
+    }
+    :root{
+        font-family: 'Indie Flower', cursive;
+        overflow-x: hidden;
+    }
+    body {
+        overflow: hidden;
+        font-size: 52px;
+    }
+    html {
+        background-image: none;
+        overflow: auto;
+        font-family: Gilroy;
+        height: 600px;
+        overflow:hidden;
+        font-size: 52px;
+    }
+
+    h5 {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 64px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 85px;
+        color: gold;
+    }
+
+    .back {
+        display: none;
+    }
+    @media screen and (max-width: 500px) {
+        .clickme{
+            max-width: 56%;
+        }
+        .backs{
+            width: 12%;
+        }
+    }
+    #img{
+        width: 250px;
+    }
+    #fors{
+        width: 28%;
+        position: absolute;
+        transform: rotate(339deg);
+        top: 5%;
+    }
+    #fors1{
+        width: 28%;
+        position: absolute;
+        transform: rotate(20deg);
+        top: 5%;
+        left: 71%;
+    }
+    #fors2{
+        width: 28%;
+        position: absolute;
+        transform: rotate(350deg);
+        top: 42%;
+        left: 35%;
+    }
+    @media screen and (max-width: 480px) {
+        .noone{
+            width: 46%;
+        }
+        .diver2{
+            display: flex;
+    width: 80%;
+    height: 201px;
+    padding: 1%;
+    font-size: 1.9em;
+    color: gold;
+    background: #faebd7cf;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    top: 36%;
+    position: absolute;
+        }
+        .clickme{
+            max-width: 37%;
+        }
+        *{
+            font-size: 23px;
+        }
+    }@keyframes fly0 {
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(-10px);}
+    100% {transform: translatey(0px);}
+}
+        #backs {
+    position: fixed;
+    font-weight: 600;
+    color: #fdfd8c;
+    border: 3px solid #fdfd8c;
+    background: #f5deb39e;
+    width: 10%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition-duration: .7s;
+    padding: -0.1%;
+    border-radius: 50%;
+    z-index: 11;
+    animation: 4s ease-in-out 0s infinite normal none running fly0;
+    margin-top: 1rem;
+    top: -30px;
+    left: 10px;
+    font-size: 0.5rem;
+}
+</style>
+
+<body>
+    <div id="backs">Повернутися</div>
+    <div class="img"></div>
+    <div class="jk">
+        <div class="bye0">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які основні завдання хімії в розв'язанні сировинної проблеми?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Розробка нових методів добутку сировини.')">Розробка нових методів добутку сировини.</button>
+                        <button class="endy noone as2" onclick="prov(2,'Створення синтетичних матеріалів.')">Створення синтетичних матеріалів.</button>
+                        <button class="endy noone as3" onclick="prov(3,'Комплексне використання сировини.')">Комплексне використання сировини.</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(1)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye1">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які хімічні методи використовуються для вилучення цінних компонентів з низькоякісної сировини або відходів?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Екстракція')">Екстракція</button>
+                        <button class="endy noone as2" onclick="prov(2,'Сорбція')">Сорбція</button>
+                        <button class="endy noone as3" onclick="prov(3,'Фільтрація')">Фільтрація</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(2)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye2">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які переваги використання синтетичних матеріалів замість природних?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Зниження дефіциту природних ресурсів.')">Зниження дефіциту природних ресурсів.</button>
+                        <button class="endy noone as2" onclick="prov(2,'Покращення властивостей матеріалів.')">Покращення властивостей матеріалів.</button>
+                        <button class="endy noone as3" onclick="prov(3,'Зменшення забруднення навколишнього середовища.')">Зменшення забруднення навколишнього середовища.</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(3)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye3">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які методи хімічного аналізу використовуються для контролю якості сировини та готової продукції?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Спектроскопія')">Спектроскопія</button>
+                        <button class="endy noone as2" onclick="prov(2,'Хроматографія')">Хроматографія</button>
+                        <button class="endy noone as3" onclick="prov(3,'Електрохімічні методи')">Електрохімічні методи</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(4)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye4">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які шляхи економного використання сировини у виробництві?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Розробка нових технологій з меншими витратами сировини.')">Розробка нових технологій з меншими витратами сировини.</button>
+                        <button class="endy noone as2" onclick="prov(2,'Запровадження енергозберігаючих технологій.')">Запровадження енергозберігаючих технологій.</button>
+                        <button class="endy noone as3" onclick="prov(3,'Використання вторинної сировини.')">Використання вторинної сировини.</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(5)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye5">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">До чого може призвести нераціональне використання сировинних ресурсів?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Виснаження природних ресурсів.')">Виснаження природних ресурсів.</button>
+                        <button class="endy noone as2" onclick="prov(2,'Погіршення екологічної ситуації.')">Погіршення екологічної ситуації.</button>
+                        <button class="endy noone as3" onclick="prov(3,'Зростання цін на сировину.')">Зростання цін на сировину.</button>
+                        <button class="endy noone as4" onclick="prov(4,'Вода')">Вода</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(6)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye6">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які хімічні методи використовуються для переробки відходів?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Піроліз')">Піроліз</button>
+                        <button class="endy noone as2" onclick="prov(2,'Газифікація')">Газифікація</button>
+                        <button class="endy noone as3" onclick="prov(3,'Компостування')">Компостування</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(7)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye7">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які переваги впровадження безвідходних технологій виробництва?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Зменшення обсягу відходів.')">Зменшення обсягу відходів.</button>
+                        <button class="endy noone as2" onclick="prov(2,'Збереження природних ресурсів.')">Збереження природних ресурсів.</button>
+                        <button class="endy noone as3" onclick="prov(3,'Зниження забруднення навколишнього середовища.')">Зниження забруднення навколишнього середовища.</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(8)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye8">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які екологічні проблеми можуть виникнути внаслідок добутку сировини?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Забруднення ґрунту, води та атмосфери.')">Забруднення ґрунту, води та атмосфери.</button>
+                        <button class="endy noone as2" onclick="prov(2,'Зміна ландшафтів.')">Зміна ландшафтів.</button>
+                        <button class="endy noone as3" onclick="prov(3,'Виснаження природних ресурсів.')">Виснаження природних ресурсів.</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(9)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye9">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Які міри можна вжити для мінімізації впливу добутку сировини на довкілля?</div>
+                    <div class="otdel">
+                        <button class="endy noone as1" onclick="prov(1,'Використання екологічно чистих методів добутку.')">Використання екологічно чистих методів добутку.</button>
+                        <button class="endy noone as2" onclick="prov(2,'Рекультивація порушених земель.')">Рекультивація порушених земель.</button>
+                        <button class="endy noone as3" onclick="prov(3,'Впровадження жорстких екологічних норм і стандартів.')">Впровадження жорстких екологічних норм і стандартів.</button>
+                        <button class="endy noone as4" onclick="prov(4,'Всі перераховані вище.')">Всі перераховані вище.</button>
+                    </div>
+                </div>
+                <div class="back"></div>
+                <button class="clickme" onclick="clickm(10)">Відправити</button>
+            </div>
+        </div>
+        <div class="bye10">
+            <div class="alll1">
+                <div class="alll">
+                    <div class="endy aspro">Відповіді</div>
+                    <p class="gjoh" style="text-align: initial;">
+                        <div class="diver2 fd0">
+                            <div class="diver1">
+                                Які основні завдання хімії в розв'язанні сировинної проблеми?    <b class="b1" onmouseenter="myFunction(0)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(0)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(1)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd1 fd">
+                            <div class="diver1">
+                                Які хімічні методи використовуються для вилучення цінних компонентів з низькоякісної сировини або відходів?    <b class="b2" onmouseenter="myFunction(1)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(0)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(2)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd2 fd">
+                            <div class="diver1">
+                                Які переваги використання синтетичних матеріалів замість природних?    <b class="b3" onmouseenter="myFunction(2)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(1)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(3)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd3 fd">
+                            <div class="diver1">
+                                Які методи хімічного аналізу використовуються для контролю якості сировини та готової продукції?    <b class="b4" onmouseenter="myFunction(3)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(2)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(4)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd4 fd">
+                            <div class="diver1">
+                                Які шляхи економного використання сировини у виробництві?   <b class="b5" onmouseenter="myFunction(4)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(3)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(5)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd5 fd">
+                            <div class="diver1">
+                                До чого може призвести нераціональне використання сировинних ресурсів?    <b class="b6" onmouseenter="myFunction(5)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(4)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(6)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd6 fd">
+                            <div class="diver1">
+                                Які хімічні методи використовуються для переробки відходів?    <b class="b7" onmouseenter="myFunction(6)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(5)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(7)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd7 fd">
+                            <div class="diver1">
+                                Які переваги впровадження безвідходних технологій виробництва?    <b class="b8" onmouseenter="myFunction(7)"></b>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(6)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(8)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd8 fd">
+                            <div class="diver1">
+                                Які екологічні проблеми можуть виникнути внаслідок добутку сировини?   <b class="b9" onmouseenter="myFunction(8)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(7)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(9)">Вперед</button>
+                        </div>
+                        <div class="diver2 fd9 fd">
+                            <div class="diver1">
+                                Які міри можна вжити для мінімізації впливу добутку сировини на довкілля?    <b class="b10" onmouseenter="myFunction(9)"></b></li>
+                            </div>
+                            <button class="clickme clicki1" onclick="clickmi(8)">Назад</button>
+                            <button class="clickme clicki" onclick="clickmi(9)">Вперед</button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="forsnackbar"><div id="snackbar"></div></div>
+</body>
+<script src="js/main.js"></script>
+<script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+</html>

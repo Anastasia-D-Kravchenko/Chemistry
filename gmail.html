@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form</title>
+  <link href="login.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet"><link rel="stylesheet" href="./style2.css">
+  <link href="css/reset.css" rel="stylesheet">
+        <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+		<link href="css/style.css" rel="stylesheet">
+        <link href="./img/icons/Suspension-Bridge-PNG-Picture.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<style>
+  @keyframes fly0 {
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(-10px);}
+    100% {transform: translatey(0px);}
+}
+        #backs {
+    position: fixed;
+    font-weight: 600;
+    color: #fdfd8c;
+    border: 3px solid #fdfd8c;
+    background: #f5deb39e;
+    width: 10%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition-duration: .7s;
+    padding: -0.1%;
+    border-radius: 50%;
+    z-index: 11;
+    animation: 4s ease-in-out 0s infinite normal none running fly0;
+    margin-top: 1rem;
+    top: 5px;
+    left: 10px;
+}
+h1{
+  font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #fdfd8c;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    margin-top: 3%;
+}
+</style>
+<body>
+  <div id="backs">Повернутися</div>
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1>Збір ідей</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<form class="login">
+  <input type="text" id="text" placeholder="Ім'я">
+  <input type="email" id="email" placeholder="Email">
+  <textarea id="password" placeholder="Запропонувати свою ідею"></textarea>
+  <button onclick="sendEmai()">send</button>
+</form>
+</body>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "GH2oSyq0VnuPRl0Tz",
+      });
+   })();
+</script>
+<script src="./javascript.js"></script>
+<script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+</html>
